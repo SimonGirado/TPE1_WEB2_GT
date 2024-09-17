@@ -15,10 +15,10 @@ CREATE TABLE Peliculas (
     FOREIGN KEY (id_genero) REFERENCES Generos(id)
 );
 
--- Insertar algunos géneros de ejemplo
+-- Insertar algunos géneros
 INSERT INTO Generos (nombre) VALUES ('Acción'), ('Comedia'), ('Drama'), ('Ciencia Ficción'), ('Terror');
 
--- Insertar algunas películas de ejemplo
+-- Insertar algunas películas
 INSERT INTO Peliculas (titulo, sinopsis, duracion, id_genero, puntaje_promedio) 
 VALUES ('Matrix', 'Un programador descubre la realidad virtual...', 136, 4, 9.5),
        ('El Padrino', 'La historia de una poderosa familia mafiosa...', 175, 3, 9.8),
